@@ -1,45 +1,49 @@
 # Simple Calculator Application
 
 ## Project Description
-This project is a simple command-line calculator written in Python. 
-It allows users to perform basic arithmetic operations such as addition, subtraction, multiplication, and division.
+This project is a simple calculator developed using Python.  
+It includes both a command-line calculator and a graphical user interface (GUI) calculator built using Tkinter.
+
+The calculator allows users to perform basic arithmetic operations such as addition, subtraction, multiplication, and division.
+
+This project demonstrates basic software development practices including code organization, version control, and documentation.
+
+---
 
 ## Features
+
 - Addition
 - Subtraction
 - Multiplication
 - Division
-- Error handling for division by zero
+- Error handling (division by zero)
+- User-friendly graphical interface
+- Command-line version
+- Continuous calculations without restarting the program
 
-## Requirements
-- Python 3.x
+---
 
-## How to Run the Project
+## Technologies Used
 
-1. Download or clone the repository.
-2. Open the project folder.
-3. Run the following command:
+- Python 3
+- Tkinter (Python GUI library)
 
-python calculator.py
+---
 
-4. Follow the on-screen instructions to perform calculations.
-
-## Example
-
-Simple Calculator
-1. Add
-2. Subtract
-3. Multiply
-4. Divide
-
-Choose operation: 1  
-Enter first number: 5  
-Enter second number: 3  
-
-Result: 8
+## Project Structure
 
 ## Screenshots
 
-(Add screenshots of the program running here)
+screenshot of the calculator running on the system.
 
-Make sure the screenshot includes the timestamp from your computer.
+Screenshots are available in the **screenshots** folder of this repository.
+
+
+
+---
+
+## Author
+
+Student: Lucky Mkhetyeva  
+Course: Software Engineering  
+Assignment: GitHub Repository Project
