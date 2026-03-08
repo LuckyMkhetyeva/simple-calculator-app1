@@ -1,47 +1,48 @@
 # Simple Calculator Application
 
 ## Project Description
-This project is a simple calculator developed using Python.  
-It includes both a command-line calculator and a graphical user interface (GUI) calculator built using Tkinter.
+This project is a simple calculator developed using Python. The calculator allows users to perform basic arithmetic operations such as addition, subtraction, multiplication, and division.  
 
-The calculator allows users to perform basic arithmetic operations such as addition, subtraction, multiplication, and division.
-
-This project demonstrates basic software development practices including code organization, version control, and documentation.
+The application includes both a command-line calculator and a graphical user interface (GUI) calculator built using Python's Tkinter library. The project demonstrates basic programming concepts and the use of version control with GitHub.
 
 ---
 
-## Features
+## How to Run the Project
 
-- Addition
-- Subtraction
-- Multiplication
-- Division
-- Error handling (division by zero)
-- User-friendly graphical interface
-- Command-line version
-- Continuous calculations without restarting the program
+1. Clone or download this repository to your computer.
+2. Open the project folder.
+3. Run the Python program using the following command:
 
----
+python calculator.py
 
-## Technologies Used
+4. Choose the calculator mode:
+- Option 1: Command Line Calculator
+- Option 2: GUI Calculator
 
-- Python 3
-- Tkinter (Python GUI library)
+The calculator will then allow you to perform arithmetic operations.
 
 ---
 
-## Project Structure
+## Dependencies / Prerequisites
 
-## Screenshots
+To run this project you need:
 
-screenshot of the calculator running on the system.
+- Python 3.x installed on your computer
 
-Screenshots are available in the **screenshots** folder of this repository.
-
-
+Tkinter is included with most Python installations, so no additional installation is required.
 
 ---
 
+## Screenshots / Example
+
+Below is an example of the calculator running on the system.
+
+(screenshots/calculator-running.png)
+![alt text](<output for calculator2.png>)
+
+The screenshot shows the program running on the computer with the system timestamp visible as required by the assignment.
+
+All images used in this README are stored in the repository.
 ## Author
 
 Student: Lucky Mkhetyeva  
