@@ -1,4 +1,7 @@
-# Simple Calculator
+import os
+
+def clear_screen():
+    os.system('cls' if os.name == 'nt' else 'clear')
 
 def add(a, b):
     return a + b
@@ -14,24 +17,55 @@ def divide(a, b):
         return "Error: Cannot divide by zero"
     return a / b
 
-print("Simple Calculator")
-print("1. Add")
-print("2. Subtract")
-print("3. Multiply")
-print("4. Divide")
 
-choice = input("Choose operation (1/2/3/4): ")
+def calculator():
 
-num1 = float(input("Enter first number: "))
-num2 = float(input("Enter second number: "))
+    while True:
+        clear_screen()
 
-if choice == "1":
-    print("Result:", add(num1, num2))
-elif choice == "2":
-    print("Result:", subtract(num1, num2))
-elif choice == "3":
-    print("Result:", multiply(num1, num2))
-elif choice == "4":
-    print("Result:", divide(num1, num2))
-else:
-    print("Invalid choice")
+        print("=" * 40)
+        print("        SIMPLE CALCULATOR")
+        print("=" * 40)
+
+        print("1. Addition (+)")
+        print("2. Subtraction (-)")
+        print("3. Multiplication (*)")
+        print("4. Division (/)")
+        print("5. Exit")
+
+        print("-" * 40)
+
+        choice = input("Select an option (1-5): ")
+
+        if choice == "5":
+            print("Thank you for using the calculator!")
+            break
+
+        if choice not in ["1", "2", "3", "4"]:
+            print("Invalid option. Please try again.")
+            input("Press Enter to continue...")
+            continue
+
+        try:
+            num1 = float(input("Enter first number: "))
+            num2 = float(input("Enter second number: "))
+        except ValueError:
+            print("Invalid number input.")
+            input("Press Enter to continue...")
+            continue
+
+        if choice == "1":
+            result = add(num1, num2)
+        elif choice == "2":
+            result = subtract(num1, num2)
+        elif choice == "3":
+            result = multiply(num1, num2)
+        elif choice == "4":
+            result = divide(num1, num2)
+
+        print("\nResult:", result)
+
+        input("\nPress Enter to continue...")
+
+
+calculator()
